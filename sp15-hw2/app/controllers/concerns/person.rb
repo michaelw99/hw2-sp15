@@ -2,11 +2,11 @@ class Person
 	def initialize(name, age)
 		@nickname = name[0..3]
 		@name = name
-		@age = age
+		@age = age.to_i
 	end
 
 	def introduce()
-		puts "Hi, my name is " @name "and I'm " @age "years old."
+		return "Hi, my name is #{@name} and I'm #{@age} years old."
 	end
 
 	def birth_year()
